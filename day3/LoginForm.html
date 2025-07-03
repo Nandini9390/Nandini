@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Attendance Monitoring System</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .login-container {
+      background-color: #fff;
+      padding: 30px 40px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      width: 400px;
+      text-align: center;
+    }
+
+    .login-container img {
+      width: 80px;
+      margin-bottom: 10px;
+    }
+
+    .login-container h2 {
+      margin: 10px 0 5px;
+      font-size: 18px;
+    }
+
+    .login-container p {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    .login-container input[type="text"],
+    .login-container input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .button-row {
+      display: flex;
+      justify-content: space-between;
+      margin: 10px 0;
+    }
+
+    .button-row button,
+    .login-container .link-row button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      background-color: #4285f4;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .button-row button:hover,
+    .login-container .link-row button:hover {
+      background-color: #3367d6;
+    }
+
+    .login-container .link-row {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 15px;
+    }
+
+    .login-container .link-row button {
+      background-color: #e0e0e0;
+      color: #333;
+    }
+
+    .login-container .link-row button:hover {
+      background-color: #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-container">
+    <img src="https://upload.wikimedia.org/wikipedia/en/3/3e/Mother_Theresa_Institute_of_Engineering_and_Technology_logo.png" alt="College Logo">
+    <h2>Mother Theresa Institute of Computer Application</h2>
+    <p>Student Attendance Monitoring System</p>
+    
+    <form>
+      <input type="text" placeholder="Username" value="janu" required>
+      <input type="password" placeholder="Enter password" required>
+      
+      <div class="button-row">
+        <button type="submit">Login</button>
+        <button type="reset">Clear</button>
+        <button type="button" onclick="window.close()">Exit</button>
+      </div>
+
+      <div class="link-row">
+        <button type="button">New User</button>
+        <button type="button">Forgot Password</button>
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>
