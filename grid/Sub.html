@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+<script>
+function Sub()
+{
+var num1,num2,Sub;
+num1=parseInt(document.getElementById("txtFirstNumber").value);
+num2=parseInt(document.getElementById("txtSecondNumber").value);
+Sub=num1-num2;
+document.getElementById("txtAnswer").value=Sub;
+}
+</script>
+</head>
+<body>
+<p>First Number:<input id="txtFirstNumber"></p>
+<p>Second Number:<input id="txtSecondNumber"></p>
+<button onclick="Sub()">Sub Them</button>
+<p>Sub=<input id="txtAnswer"></p>
+</body>
+</html>

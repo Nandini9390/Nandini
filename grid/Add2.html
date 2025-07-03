@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+<script>
+function clean()
+{
+document.getElementById("txtFirstNumber").value=0;
+document.getElementbyId("txtSecondNumber").value="";
+document.getElementById("txtAnswer").value="";
+}
+</script>
+</head>
+<body>
+<p>First Number:<input id="txtFirstNumber"></p>
+<p>Second Number:<input id="txtSecondNumber"></p>
+<button onclick="add()">Add Them</button>
+<button onclick="sub()">Subtract Them</button>
+<button onclick="clean()">Reset</button>
+<p>Sum=<input id="txtAnswer"></p>
+</body>
+</html>

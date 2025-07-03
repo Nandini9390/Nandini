@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+<script>
+function Mul()
+{
+var num1,num2,Mul;
+num1=parseInt(document.getElementById("txtFirstNumber").value);
+num2=parseInt(document.getElementById("txtSecondNumber").value);
+Mul=num1*num2;
+document.getElementById("txtAnswer").value=Mul;
+}
+</script>
+</head>
+<body>
+<p>First Number:<input id="txtFirstNumber"></p>
+<p>Second Number:<input id="txtSecondNumber"></p>
+<button onclick="Mul()">Mul Them</button>
+<p>Mul=<input id="txtAnswer"></p>
+</body>
+</html>
