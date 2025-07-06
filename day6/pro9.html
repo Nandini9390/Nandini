@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Training FeedBack Form</title>
+  <style>
+    body {
+      font-family: Arial;
+      margin: 30px;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Training FeedBack Form</h2>
+  <form id="FeedBack" onsubmit="showData(event)">
+    <label>
+      Faculty Name:
+      <input type="text" id="name" required>
+    </label>
+
+<label>
+      Training Attended:
+      <select ="country" required>
+        <option value="">--SelectTraining--</option>
+        <option value="python">python</option>
+        <option value="javascript">javascript</option>
+        <option value="css">css</option>
+ <option value="Django">Django</option>
+      </select>
+    </label>
+
+    <label>
+     Overall Rating:
+<br/>
+      <input type="checkbox" name="Overall Rating" value="Excellent" required> Excellent
+      <input type="checkbox" name="Overall Rating" value="Average"> Average<br/>
+<input type="checkbox" name="Overall Rating" value="Good"> Good
+<input type="checkbox" name="Overall Rating" value="poor"> poor
+</label>
+<label>
+ Topics Converted:
+<br/>
+      <input type="checkbox" name="Topics Converted" value="Content Quality" required> Content Quality
+<br/>
+      <input type="checkbox" name="Topics Converted" value="Delivery"> Delivery<br/>
+<input type="checkbox" name="Topics Converted" value="Interaction"> Interaction<br/>
+<input type="checkbox" name="Topics Converted" value="Relavance"> Relavance<br/>
+     
+      </select>
+    </label>
+<label>
+Suggestions/Comments:
+<br>
+<textarea rows="5"cols="60"name="suggestions">
+Enter suggestions here
+</textarea>
+</label>
+
+
+    <br>
+    <button type="submitfeedback">SubmitFeedback</button>
+  </form>
+
+</body>
+</html>
