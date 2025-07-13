@@ -1,0 +1,10 @@
+{% extends "master.html" %}
+{% block title %}Employee List{% endblock %}
+{% block content %}
+<h1>Employee List</h1>
+<ul>
+    {% for emp in employees %}
+        <li>{{ emp.name }} - {{ emp.email }} - {{ emp.designation }} - {{ emp.joining_date }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
