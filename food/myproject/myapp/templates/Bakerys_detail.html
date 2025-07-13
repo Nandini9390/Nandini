@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ Bakerys.name }}</title>
+</head>
+<body>
+    <h1>{{ Bakerys.name }}</h1>
+    {% if Bakerys.image %}
+        <img src="{{ Bakerys.image.url }}" alt="{{ Bakerys.name }}">
+    {% endif %}
+    <p>{{ Bakerys.description }}</p>
+    <p>Price: Rs{{ mess.price }}</p>
+    <a href="/">Back to Bakerys</a>
+</body>
+</html>

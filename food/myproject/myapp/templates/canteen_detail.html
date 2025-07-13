@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ canteen.name }}</title>
+</head>
+<body>
+    <h1>{{ canteen.name }}</h1>
+    {% if canteen.image %}
+        <img src="{{ canteen.image.url }}" alt="{{ canteen.name }}">
+    {% endif %}
+    <p>{{ canteen.description }}</p>
+    <p>Price: Rs{{ canteen.price }}</p>
+    <a href="/">Back to canteen</a>
+</body>
+</html>

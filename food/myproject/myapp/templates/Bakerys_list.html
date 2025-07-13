@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bakerys myapp</title>
+    <style>
+        img { max-width: 150px; }
+        .mess { border: 1px solid #ccc; padding: 10px; margin: 10px; display: inline-block; }
+    </style>
+</head>
+<body>
+    <h1>Bakerys</h1>
+    {% for mess in mess %}
+        <div class="mess">
+            {% if mess.image %}
+                <img src="{{Bakerys.image.url }}" alt="{{ Bakerys.name }}">
+            {% endif %}
+            <h2><a href="{% url 'Bakerys_detail' Bakerys.pk %}">{{Bakerys.name }}</a></h2>
+            <p>${{ Bakerys.price }}</p>
+        </div>
+    {% endfor %}
+</body>
+</html>
